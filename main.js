@@ -138,7 +138,7 @@ var numberFormatters =
 		' septentrigintillion',
 		' octotrigintillion',
 		' novemtrigintillion',
-		' quadragintillion',
+		' quadragintillion'
 	]),
 	formatEveryThirdPower([
 		'',
