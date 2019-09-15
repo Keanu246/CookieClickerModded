@@ -6084,8 +6084,11 @@ Game.Launch=function()
 			else if (id==1) Game.buyMode=-1;
 			else if (id==2) Game.buyBulk=1;
 			else if (id==3) Game.buyBulk=10;
-			else if (id==4) Game.buyBulk=100;
-			else if (id==5) Game.buyBulk=-1;
+			else if (id==4) Game.buyBulk=50;
+			else if (id==5) Game.buyBulk=100;
+			else if (id==6) Game.buyBulk=500;
+			else if (id==7) Game.buyBulk=1000;
+			else if (id==8) Game.buyBulk=-1;
 			
 			if (Game.buyMode==1 && Game.buyBulk==-1) Game.buyBulk=100;
 			
