@@ -126,7 +126,7 @@ function formatEveryThirdPower(notations)
 
 function rawFormatter(value) {return Math.round(value * 1000) / 1000;}
 
-var formatLong=[' thousand',' million',' billion',' trillion',' quadrillion',' quintillion',' sextillion',' septillion',' octillion',' nonillion',' decillion',' undecillion',' duodecillion',' tredecillion',' quattuordecillion',' quindecillion',' sexdecillion',' septendecillion',' octodecillion',' novemdecillion',' vigintillion',' unvigintillion',' duovigintillion',' tresvigintillion',' quattuorvigintillion',' quinvigintillion',' sexvigintillion',' septenvigintillion',' octovigintillion',' novemvigintillion',' trigintillion'];
+var formatLong=[' thousand',' million',' billion',' trillion',' quadrillion',' quintillion',' sextillion',' septillion',' octillion',' nonillion',' decillion',' undecillion',' duodecillion',' tredecillion',' quattuordecillion',' quindecillion',' sexdecillion',' septendecillion',' octodecillion',' novemdecillion',' vigintillion',' unvigintillion',' duovigintillion',' tresvigintillion',' quattuorvigintillion',' quinvigintillion',' sexvigintillion',' septenvigintillion',' octovigintillion',' novemvigintillion',' trigintillion',' untrigintillion',' duotrigintillion',' tretrigintillion',' quattuortrigintillion',' quintrigintillion',' sextrigintillion',' septentrigintillion',' octotrigintillion',' novemtrigintillion',' quadragintillion'];
 var prefixes=['','un','duo','tre','quattuor','quin','sex','septen','octo','novem'];
 var suffixes=['','','','','','','','','',''];
 for (var i in suffixes)
