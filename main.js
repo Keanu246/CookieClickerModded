@@ -9116,6 +9116,9 @@ Game.Launch=function()
 			25:{pic:'milkSpiced'},
 			26:{pic:'milkMaple'},
 			27:{pic:'milkMint'},
+			28:{pic:'milkMint'},
+			29:{pic:'milkMint'},
+			30:{pic:'milkMint'},
 		};
 		
 		
@@ -9732,7 +9735,7 @@ Game.Launch=function()
 		
 		order=20000;
 		new Game.Upgrade('Kitten executives','You gain <b>more CpS</b> the more milk you have.<q>ready to execute whatever and whoever you\'d like, sir</q>',900000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
-		new Game.Upgrade('Kitten masters','You gain <b>more CpS</b> the more milk you have.<q>we are masters, sir</q>',900000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
+		new Game.Upgrade('Kitten masters','You gain <b>more CpS</b> the more milk you have.<q>we are masters, sir</q>',900000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',14));Game.last.kitten=1;Game.MakeTiered(Game.last,14,19);
 		
 		order=10020;
 		Game.NewUpgradeCookie({name:'Chai tea cookies',desc:'Not exactly Captain Picard\'s favorite, but I mean, these will do in a pinch.',icon:[23,32],power:						5,price: getCookiePrice(4)+5});Game.last.order=10020.5685;
@@ -9749,11 +9752,11 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Candy',desc:'There are two pillars to the world of sweets : pastries, of course - and candy.<br>You could make a whole new game just about these, but for now, please enjoy these assorted generic candies.',icon:[30,10],require:'Box of not cookies',		power:5,price: Math.pow(10,46)});
 		
 		order=20000;
-		new Game.Upgrade('Kitten solos','You gain <b>more CpS</b> the more milk you have.<q>we are in solo teams, sir</q>',900000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
-		new Game.Upgrade('Kitten duos','You gain <b>more CpS</b> the more milk you have.<q>we are duos in 2 teams, sir</q>',900000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
-		new Game.Upgrade('Kitten trios','You gain <b>more CpS</b> the more milk you have.<q>we are trios in 3 teams, sir</q>',900000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
-		new Game.Upgrade('Kitten squads','You gain <b>more CpS</b> the more milk you have.<q>we are squads in 4 teams, sir</q>',900000000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
-		new Game.Upgrade('Kitten elites','You gain <b>more CpS</b> the more milk you have.<q>we are elites, sir</q>',900000000000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
+		new Game.Upgrade('Kitten solos','You gain <b>more CpS</b> the more milk you have.<q>we are in solo teams, sir</q>',900000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',15));Game.last.kitten=1;Game.MakeTiered(Game.last,15,20);
+		new Game.Upgrade('Kitten duos','You gain <b>more CpS</b> the more milk you have.<q>we are duos in 2 teams, sir</q>',900000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',16));Game.last.kitten=1;Game.MakeTiered(Game.last,16,21);
+		new Game.Upgrade('Kitten trios','You gain <b>more CpS</b> the more milk you have.<q>we are trios in 3 teams, sir</q>',900000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',17));Game.last.kitten=1;Game.MakeTiered(Game.last,17,22);
+		new Game.Upgrade('Kitten squads','You gain <b>more CpS</b> the more milk you have.<q>we are squads in 4 teams, sir</q>',900000000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',17));Game.last.kitten=1;Game.MakeTiered(Game.last,17,22);
+		new Game.Upgrade('Kitten elites','You gain <b>more CpS</b> the more milk you have.<q>we are elites, sir</q>',900000000000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',17));Game.last.kitten=1;Game.MakeTiered(Game.last,17,22);
 		
 		order=19000;
 		new Game.TieredUpgrade('Fortune #001','Cursors are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>Fingers are not the only thing you can count on.</q>','Cursor','fortune');
@@ -12120,6 +12123,10 @@ Game.Launch=function()
 			{name:'Rank XVI - Spiced milk',pic:'milkSpiced',icon:[26,23]},
 			{name:'Rank XVII - Maple milk',pic:'milkMaple',icon:[28,23]},
 			{name:'Rank XVIII - Mint milk',pic:'milkMint',icon:[29,23]},
+			{name:'Rank IY - Super milk',pic:'milkMint',icon:[29,23]},
+			{name:'Rank Y - Ultra milk',pic:'milkMint',icon:[29,23]},
+			{name:'Rank YI - Elite milk',pic:'milkMint',icon:[29,23]},
+			{name:'Rank YII - God milk',pic:'milkMint',icon:[29,23]},
 		];
 		Game.Milk=Game.Milks[0];
 	
@@ -13125,12 +13132,12 @@ Game.Launch=function()
 			if (Game.milkProgress>=10) Game.Unlock('Kitten marketeers');
 			if (Game.milkProgress>=11) Game.Unlock('Kitten analysts');
 			if (Game.milkProgress>=12) Game.Unlock('Kitten executives');
-			if (Game.milkProgress>=13) Game.Unlock('Kitten masters');
-			if (Game.milkProgress>=13) Game.Unlock('Kitten solos');
-			if (Game.milkProgress>=13) Game.Unlock('Kitten duos');
-			if (Game.milkProgress>=13) Game.Unlock('Kitten trios');
-			if (Game.milkProgress>=13) Game.Unlock('Kitten squads');
-			if (Game.milkProgress>=13) Game.Unlock('Kitten elites');
+			if (Game.milkProgress>=12) Game.Unlock('Kitten masters');
+			if (Game.milkProgress>=12) Game.Unlock('Kitten solos');
+			if (Game.milkProgress>=12) Game.Unlock('Kitten duos');
+			if (Game.milkProgress>=12) Game.Unlock('Kitten trios');
+			if (Game.milkProgress>=12) Game.Unlock('Kitten squads');
+			if (Game.milkProgress>=12) Game.Unlock('Kitten elites');
 			Game.milkH=Math.min(1,Game.milkProgress)*0.35;
 			Game.milkHd+=(Game.milkH-Game.milkHd)*0.02;
 			
