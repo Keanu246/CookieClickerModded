@@ -13118,7 +13118,7 @@ Game.Launch=function()
 			Game.mousePointer=0;
 			
 			//handle milk and milk accessories
-			Game.milkProgress=Game.AchievementsOwned/25;
+			Game.milkProgress=Game.AchievementsOwned/31;
 			if (Game.milkProgress>=0.5) Game.Unlock('Kitten helpers');
 			if (Game.milkProgress>=1) Game.Unlock('Kitten workers');
 			if (Game.milkProgress>=2) Game.Unlock('Kitten engineers');
@@ -13132,12 +13132,12 @@ Game.Launch=function()
 			if (Game.milkProgress>=10) Game.Unlock('Kitten marketeers');
 			if (Game.milkProgress>=11) Game.Unlock('Kitten analysts');
 			if (Game.milkProgress>=12) Game.Unlock('Kitten executives');
-			if (Game.milkProgress>=12) Game.Unlock('Kitten masters');
-			if (Game.milkProgress>=12) Game.Unlock('Kitten solos');
-			if (Game.milkProgress>=12) Game.Unlock('Kitten duos');
-			if (Game.milkProgress>=12) Game.Unlock('Kitten trios');
-			if (Game.milkProgress>=12) Game.Unlock('Kitten squads');
-			if (Game.milkProgress>=12) Game.Unlock('Kitten elites');
+			if (Game.milkProgress>=13) Game.Unlock('Kitten masters');
+			if (Game.milkProgress>=14) Game.Unlock('Kitten solos');
+			if (Game.milkProgress>=15) Game.Unlock('Kitten duos');
+			if (Game.milkProgress>=15) Game.Unlock('Kitten trios');
+			if (Game.milkProgress>=15) Game.Unlock('Kitten squads');
+			if (Game.milkProgress>=15) Game.Unlock('Kitten elites');
 			Game.milkH=Math.min(1,Game.milkProgress)*0.35;
 			Game.milkHd+=(Game.milkH-Game.milkHd)*0.02;
 			
