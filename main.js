@@ -9746,9 +9746,6 @@ Game.Launch=function()
 		order=20000;
 		new Game.Upgrade('Kitten solos','You gain <b>more CpS</b> the more milk you have.<q>we are a solo team, sir</q>',900000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',15));Game.last.kitten=1;Game.MakeTiered(Game.last,15,18);
 		new Game.Upgrade('Kitten duos','You gain <b>more CpS</b> the more milk you have.<q>we are duos in 50 teams, sir</q>',900000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',16));Game.last.kitten=1;Game.MakeTiered(Game.last,16,18);
-		new Game.Upgrade('Kitten trios','You gain <b>more CpS</b> the more milk you have.<q>we are trios in 35 teams, sir</q>',900000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',17));Game.last.kitten=1;Game.MakeTiered(Game.last,17,18);
-		new Game.Upgrade('Kitten squads','You gain <b>more CpS</b> the more milk you have.<q>we are squads in 25 teams, sir</q>',900000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',18));Game.last.kitten=1;Game.MakeTiered(Game.last,18,18);
-		new Game.Upgrade('Kitten elites','You gain <b>more CpS</b> the more milk you have.<q>we are a elite, sir</q>',900000000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
 		
 		order=10030;
 		Game.NewUpgradeCookie({name:'Zilla wafers',desc:'Popular vanilla-flavored biscuits that somehow keep ending up in banana pudding.<br>Themed after a beloved radioactive prehistoric monster, for some reason.',icon:[22,32],require:'Box of brand biscuits',power:												2,	price:	999999999999999999999999999999*5});
@@ -9756,6 +9753,10 @@ Game.Launch=function()
 		
 		order=10060;
 		Game.NewUpgradeCookie({name:'Candy',desc:'There are two pillars to the world of sweets : pastries, of course - and candy.<br>You could make a whole new game just about these, but for now, please enjoy these assorted generic candies.',icon:[30,10],require:'Box of not cookies',		power:5,price: Math.pow(10,46)});
+		
+		order=20000;
+		new Game.Upgrade('Kitten trios','You gain <b>more CpS</b> the more milk you have.<q>we are trios in 35 teams, sir</q>',900000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',17));Game.last.kitten=1;Game.MakeTiered(Game.last,17,18);
+		new Game.Upgrade('Kitten squads','You gain <b>more CpS</b> the more milk you have.<q>we are squads in 25 teams, sir</q>',900000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',18));Game.last.kitten=1;Game.MakeTiered(Game.last,18,18);
 		
 		order=19000;
 		new Game.TieredUpgrade('Fortune #001','Cursors are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>Fingers are not the only thing you can count on.</q>','Cursor','fortune');
@@ -9793,6 +9794,8 @@ Game.Launch=function()
 		
 		new Game.Upgrade('Fortune cookies','The news ticker may occasionally have <b>fortunes</b>, which may be clicked for something good.<q>These don\'t taste all that great but that\'s not really the point, is it?</q>',77777777777,[29,8]);Game.last.pool='prestige';Game.last.parents=['Distilled essence of redoubled luck'];
 		
+		order=20000;
+		new Game.Upgrade('Kitten elites','You gain <b>more CpS</b> the more milk you have.<q>we are a elite, sir</q>',900000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
 		
 		//end of upgrades
 		
