@@ -9732,7 +9732,7 @@ Game.Launch=function()
 		
 		order=20000;
 		new Game.Upgrade('Kitten executives','You gain <b>more CpS</b> the more milk you have.<q>ready to execute whatever and whoever you\'d like, sir</q>',900000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
-		new Game.Upgrade('Kitten masters','You gain <b>more CpS</b> the more milk you have.<q>we are masters, sir</q>',900000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,14,18);
+		new Game.Upgrade('Kitten masters','You gain <b>more CpS</b> the more milk you have.<q>we are masters, sir</q>',900000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,14,19);
 		
 		order=10020;
 		Game.NewUpgradeCookie({name:'Chai tea cookies',desc:'Not exactly Captain Picard\'s favorite, but I mean, these will do in a pinch.',icon:[23,32],power:						5,price: getCookiePrice(4)+5});Game.last.order=10020.5685;
@@ -9749,11 +9749,11 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Candy',desc:'There are two pillars to the world of sweets : pastries, of course - and candy.<br>You could make a whole new game just about these, but for now, please enjoy these assorted generic candies.',icon:[30,10],require:'Box of not cookies',		power:5,price: Math.pow(10,46)});
 		
 		order=20000;
-		new Game.Upgrade('Kitten solos','You gain <b>more CpS</b> the more milk you have.<q>we are in solo teams, sir</q>',900000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,15,18);
-		new Game.Upgrade('Kitten duos','You gain <b>more CpS</b> the more milk you have.<q>we are duos in 2 teams, sir</q>',900000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,16,18);
-		new Game.Upgrade('Kitten trios','You gain <b>more CpS</b> the more milk you have.<q>we are trios in 3 teams, sir</q>',900000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,17,18);
-		new Game.Upgrade('Kitten squads','You gain <b>more CpS</b> the more milk you have.<q>we are squads in 4 teams, sir</q>',900000000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,17,18);
-		new Game.Upgrade('Kitten elites','You gain <b>more CpS</b> the more milk you have.<q>we are elites, sir</q>',900000000000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,17,18);
+		new Game.Upgrade('Kitten solos','You gain <b>more CpS</b> the more milk you have.<q>we are in solo teams, sir</q>',900000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,15,20);
+		new Game.Upgrade('Kitten duos','You gain <b>more CpS</b> the more milk you have.<q>we are duos in 2 teams, sir</q>',900000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,16,21);
+		new Game.Upgrade('Kitten trios','You gain <b>more CpS</b> the more milk you have.<q>we are trios in 3 teams, sir</q>',900000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,17,22);
+		new Game.Upgrade('Kitten squads','You gain <b>more CpS</b> the more milk you have.<q>we are squads in 4 teams, sir</q>',900000000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,17,23);
+		new Game.Upgrade('Kitten elites','You gain <b>more CpS</b> the more milk you have.<q>we are elites, sir</q>',900000000000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,17,24);
 		
 		order=19000;
 		new Game.TieredUpgrade('Fortune #001','Cursors are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>Fingers are not the only thing you can count on.</q>','Cursor','fortune');
