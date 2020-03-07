@@ -8151,12 +8151,12 @@ Game.Launch=function()
 			11:{name:'Astrofudge',unlock:400,achievUnlock:500,iconRow:28,color:'#9a3316',price:			5000000000000000000000000},
 			12:{name:'Alabascream',unlock:450,achievUnlock:550,iconRow:30,color:'#c1a88c',price:		50000000000000000000000000000},
 			13:{name:'Iridyum',unlock:500,achievUnlock:600,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000},
-			14:{name:'Power',unlock:550,achievUnlock:650,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000000},
-			15:{name:'Best',unlock:600,achievUnlock:700,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000000000},
-			16:{name:'Master',unlock:700,achievUnlock:750,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000000000000},
-			17:{name:'Super',unlock:800,achievUnlock:800,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000000000000000},
-			18:{name:'Elite',unlock:900,achievUnlock:900,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000000000000000000},
-			19:{name:'Ultra',unlock:1000,achievUnlock:1000,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000000000000000000000},
+			14:{name:'Power',unlock:550,achievUnlock:650,iconRow:32,color:'#adb1b3',price:			500000000000000000000000000000000000},
+			15:{name:'Best',unlock:600,achievUnlock:700,iconRow:33,color:'#adb1b3',price:			500000000000000000000000000000000000000},
+			16:{name:'Master',unlock:700,achievUnlock:750,iconRow:34,color:'#adb1b3',price:			500000000000000000000000000000000000000000},
+			17:{name:'Super',unlock:800,achievUnlock:800,iconRow:35,color:'#adb1b3',price:			500000000000000000000000000000000000000000000},
+			18:{name:'Elite',unlock:900,achievUnlock:900,iconRow:36,color:'#adb1b3',price:			500000000000000000000000000000000000000000000000},
+			19:{name:'Ultra',unlock:1000,achievUnlock:1000,iconRow:37,color:'#adb1b3',price:			500000000000000000000000000000000000000000000000000},
 			'synergy1':{name:'Synergy I',unlock:15,iconRow:20,color:'#008595',special:1,req:'Synergies Vol. I',price:			200000},
 			'synergy2':{name:'Synergy II',unlock:75,iconRow:29,color:'#008595',special:1,req:'Synergies Vol. II',price:			200000000000},
 			'fortune':{name:'Fortune',unlock:-1,iconRow:32,color:'#9ab834',special:1,price:				77777777777777777777777777777},
@@ -9731,7 +9731,7 @@ Game.Launch=function()
 		
 		order=20000;
 		new Game.Upgrade('Kitten executives','You gain <b>more CpS</b> the more milk you have.<q>ready to execute whatever and whoever you\'d like, sir</q>',900000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
-		new Game.Upgrade('Kitten masters','You gain <b>more CpS</b> the more milk you have.<q>we are masters, sir</q>',900000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,14,18);
+		new Game.Upgrade('Kitten masters','You gain <b>more CpS</b> the more milk you have.<q>we are masters, sir</q>',900000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',14));Game.last.kitten=1;Game.MakeTiered(Game.last,14,18);
 		
 		order=10020;
 		Game.NewUpgradeCookie({name:'Chai tea cookies',desc:'Not exactly Captain Picard\'s favorite, but I mean, these will do in a pinch.',icon:[23,32],power:						5,price: getCookiePrice(4)+5});Game.last.order=10020.5685;
@@ -9748,8 +9748,8 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Candy',desc:'There are two pillars to the world of sweets : pastries, of course - and candy.<br>You could make a whole new game just about these, but for now, please enjoy these assorted generic candies.',icon:[30,10],require:'Box of not cookies',		power:5,price: Math.pow(10,46)});
 		
 		order=20000;
-		new Game.Upgrade('Kitten solos','You gain <b>more CpS</b> the more milk you have.<q>we are a solo team, sir</q>',900000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,15,19);
-		new Game.Upgrade('Kitten duos','You gain <b>more CpS</b> the more milk you have.<q>we are duos in 2 teams, sir</q>',900000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,16,19);
+		new Game.Upgrade('Kitten solos','You gain <b>more CpS</b> the more milk you have.<q>we are a solo team, sir</q>',900000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',15));Game.last.kitten=1;Game.MakeTiered(Game.last,15,18);
+		new Game.Upgrade('Kitten duos','You gain <b>more CpS</b> the more milk you have.<q>we are duos in 2 teams, sir</q>',900000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',16));Game.last.kitten=1;Game.MakeTiered(Game.last,16,18);
 		
 		order=19000;
 		new Game.TieredUpgrade('Fortune #001','Cursors are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>Fingers are not the only thing you can count on.</q>','Cursor','fortune');
