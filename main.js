@@ -128,7 +128,7 @@ function rawFormatter(value) {return Math.round(value * 1000) / 1000;}
 
 var formatLong=[' thousand',' million',' billion',' trillion',' quadrillion',' quintillion',' sextillion',' septillion',' octillion',' nonillion',' decillion',' undecillion',' duodecillion',' tredecillion',' quattuordecillion',' quindecillion',' sexdecillion',' septendecillion',' octodecillion',' novemdecillion',' vigintillion',' unvigintillion',' duovigintillion',' tresvigintillion',' quattuorvigintillion',' quinvigintillion',' sexvigintillion',' septenvigintillion',' octovigintillion',' novemvigintillion',' trigintillion',' untrigintillion',' duotrigintillion',' tretrigintillion',' quattuortrigintillion',' quintrigintillion',' sextrigintillion',' septentrigintillion',' octotrigintillion',' novemtrigintillion',' quadragintillion','A','AA','B','BB','C','CC','D','DD','E','EE','F','FF','G','GG','H','HA','HB','HC','HD','HE','HF','HG','HH'];
 var prefixes=[];
-var suffixes=[];
+var suffixes=['','','','','','','','','',''];
 for (var i in suffixes)
 {
 	for (var ii in prefixes)
