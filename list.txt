@@ -6,4 +6,5 @@ excanvas.compiled.js
 main.js
 minigameGarden.js
 minigameGrimoire.js
+minigameImitationGame.js
 minigamePantheon.js
