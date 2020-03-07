@@ -1357,7 +1357,7 @@ Game.Launch=function()
 		Game.customMouseCps=[];//add to the cookies earned per click computation (functions should return something to add to the multiplier ie. 0.1 for an addition of 10 to the CpS multiplier)
 		Game.customMouseCpsMult=[];//add to the cookies earned per click multiplicative computation (functions should return something to multiply by the multiplier ie. 1.05 for a 5% increase of the multiplier)
 		Game.customCookieClicks=[];//add to the cookie click calls
-		Game.customCreate=['Kitten masters','Kitten solos','Kitten duos','Kitten trios','Kitten squads','Kitten elites'];//create your new upgrades and achievements in there
+		Game.customCreate=[];//create your new upgrades and achievements in there
 
 		Game.LoadMod=function(url)//this loads the mod at the given URL and gives the script an automatic id (URL "http://example.com/my_mod.js" gives the id "modscript_my_mod")
 		{
@@ -4114,8 +4114,8 @@ Game.Launch=function()
 			if (Game.Has('Kitten marketeers')) catMult*=(1+Game.milkProgress*0.15*milkMult);
 			if (Game.Has('Kitten analysts')) catMult*=(1+Game.milkProgress*0.125*milkMult);
 			if (Game.Has('Kitten executives')) catMult*=(1+Game.milkProgress*0.115*milkMult);
-			if (Game.Has('Kitten angels')) catMult*=(1+Game.milkProgress*0.1*milkMult);
 			if (Game.Has('Kitten masters')) catMult*=(1+Game.milkProgress*0.25*milkMult);
+			if (Game.Has('Kitten angels')) catMult*=(1+Game.milkProgress*0.1*milkMult);
 			if (Game.Has('Fortune #103')) catMult*=(1+Game.milkProgress*0.05*milkMult);
 			
 			Game.cookiesMultByType['kittens']=catMult;
@@ -9111,9 +9111,6 @@ Game.Launch=function()
 			25:{pic:'milkSpiced'},
 			26:{pic:'milkMaple'},
 			27:{pic:'milkMint'},
-			28:{pic:'milkMint'},
-			29:{pic:'milkMint'},
-			30:{pic:'milkMint'},
 		};
 		
 		
@@ -9730,7 +9727,7 @@ Game.Launch=function()
 		
 		order=20000;
 		new Game.Upgrade('Kitten executives','You gain <b>more CpS</b> the more milk you have.<q>ready to execute whatever and whoever you\'d like, sir</q>',900000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
-		new Game.Upgrade('Kitten masters','You gain <b>more CpS</b> the more milk you have.<q>we are masters, sir</q>',900000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,14,19);
+		new Game.Upgrade('Kitten masters','You gain <b>more CpS</b> the more milk you have.<q>we are masters, sir</q>',900000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
 		
 		order=10020;
 		Game.NewUpgradeCookie({name:'Chai tea cookies',desc:'Not exactly Captain Picard\'s favorite, but I mean, these will do in a pinch.',icon:[23,32],power:						5,price: getCookiePrice(4)+5});Game.last.order=10020.5685;
@@ -12111,10 +12108,7 @@ Game.Launch=function()
 			{name:'Rank XVI - Spiced milk',pic:'milkSpiced',icon:[26,23]},
 			{name:'Rank XVII - Maple milk',pic:'milkMaple',icon:[28,23]},
 			{name:'Rank XVIII - Mint milk',pic:'milkMint',icon:[29,23]},
-			{name:'Rank IY - Super milk',pic:'milkPlain',icon:[29,23]},
-			{name:'Rank Y - Ultra milk',pic:'milkPlain',icon:[29,23]},
-			{name:'Rank YI - Elite milk',pic:'milkPlain',icon:[29,23]},
-			{name:'Rank YII - God milk',pic:'milkPlain',icon:[29,23]},
+			{name:'Rank IY - Super milk',pic:'milkMint',icon:[29,23]},
 		];
 		Game.Milk=Game.Milks[0];
 	
@@ -13106,7 +13100,7 @@ Game.Launch=function()
 			Game.mousePointer=0;
 			
 			//handle milk and milk accessories
-			Game.milkProgress=Game.AchievementsOwned/31;
+			Game.milkProgress=Game.AchievementsOwned/27;
 			if (Game.milkProgress>=0.5) Game.Unlock('Kitten helpers');
 			if (Game.milkProgress>=1) Game.Unlock('Kitten workers');
 			if (Game.milkProgress>=2) Game.Unlock('Kitten engineers');
@@ -13120,7 +13114,7 @@ Game.Launch=function()
 			if (Game.milkProgress>=10) Game.Unlock('Kitten marketeers');
 			if (Game.milkProgress>=11) Game.Unlock('Kitten analysts');
 			if (Game.milkProgress>=12) Game.Unlock('Kitten executives');
-			if (Game.milkProgress>=13) Game.Unlock('Kitten masters');
+			if (Game.milkProgress>=12) Game.Unlock('Kitten masters');
 			Game.milkH=Math.min(1,Game.milkProgress)*0.35;
 			Game.milkHd+=(Game.milkH-Game.milkHd)*0.02;
 			
