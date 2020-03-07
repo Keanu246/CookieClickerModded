@@ -9757,6 +9757,7 @@ Game.Launch=function()
 		order=20000;
 		new Game.Upgrade('Kitten trios','You gain <b>more CpS</b> the more milk you have.<q>we are trios in 35 teams, sir</q>',900000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',17));Game.last.kitten=1;Game.MakeTiered(Game.last,17,18);
 		new Game.Upgrade('Kitten squads','You gain <b>more CpS</b> the more milk you have.<q>we are squads in 25 teams, sir</q>',900000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',18));Game.last.kitten=1;Game.MakeTiered(Game.last,18,18);
+		new Game.Upgrade('Kitten elites','You gain <b>more CpS</b> the more milk you have.<q>we are a elite, sir</q>',900000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
 		
 		order=19000;
 		new Game.TieredUpgrade('Fortune #001','Cursors are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>Fingers are not the only thing you can count on.</q>','Cursor','fortune');
@@ -9793,9 +9794,6 @@ Game.Launch=function()
 		Game.last.priceFunc=function(me){return Math.min(me.basePrice,Game.unbuffedCps*60*60*24);}
 		
 		new Game.Upgrade('Fortune cookies','The news ticker may occasionally have <b>fortunes</b>, which may be clicked for something good.<q>These don\'t taste all that great but that\'s not really the point, is it?</q>',77777777777,[29,8]);Game.last.pool='prestige';Game.last.parents=['Distilled essence of redoubled luck'];
-		
-		order=20000;
-		new Game.Upgrade('Kitten elites','You gain <b>more CpS</b> the more milk you have.<q>we are a elite, sir</q>',900000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
 		
 		//end of upgrades
 		
@@ -13138,12 +13136,12 @@ Game.Launch=function()
 			if (Game.milkProgress>=10) Game.Unlock('Kitten marketeers');
 			if (Game.milkProgress>=11) Game.Unlock('Kitten analysts');
 			if (Game.milkProgress>=12) Game.Unlock('Kitten executives');
-			if (Game.milkProgress>=13) Game.Unlock('Kitten masters');
-			if (Game.milkProgress>=14) Game.Unlock('Kitten solos');
-			if (Game.milkProgress>=15) Game.Unlock('Kitten duos');
-			if (Game.milkProgress>=16) Game.Unlock('Kitten trios');
-			if (Game.milkProgress>=17) Game.Unlock('Kitten squads');
-			if (Game.milkProgress>=18) Game.Unlock('Kitten elites');
+			if (Game.milkProgress>=12.5) Game.Unlock('Kitten masters');
+			if (Game.milkProgress>=13) Game.Unlock('Kitten solos');
+			if (Game.milkProgress>=13.5) Game.Unlock('Kitten duos');
+			if (Game.milkProgress>=14) Game.Unlock('Kitten trios');
+			if (Game.milkProgress>=14.5) Game.Unlock('Kitten squads');
+			if (Game.milkProgress>=15) Game.Unlock('Kitten elites');
 			Game.milkH=Math.min(1,Game.milkProgress)*0.35;
 			Game.milkHd+=(Game.milkH-Game.milkHd)*0.02;
 			
