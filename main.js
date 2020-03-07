@@ -8830,8 +8830,8 @@ Game.Launch=function()
 		new Game.Upgrade('Undecillion fingers','The mouse and cursors gain <b>+1e+10</b> cookies for each non-cursor object owned.<q>Too many cursors...</q>',1e31,[12,19]);Game.MakeTiered(Game.last,15,0);
 		new Game.Upgrade('Duodecillion fingers','The mouse and cursors gain <b>+1e+11</b> cookies for each non-cursor object owned.<q>Too much clicks...</q>',1e34,[12,19]);Game.MakeTiered(Game.last,16,0);
 		new Game.Upgrade('Tredecillion fingers','The mouse and cursors gain <b>+1e+12</b> cookies for each non-cursor object owned.<q>The best fingers to click for free views.</q>',1e37,[12,19]);Game.MakeTiered(Game.last,17,0);
-		new Game.Upgrade('Quattuordecillion fingers','The mouse and cursors gain <b>+1e+13</b> cookies for each non-cursor object owned.<q>The skilled fingers to click for free subscribers.</q>',1e40,[12,19]);Game.MakeTiered(Game.last,17,0);
-		new Game.Upgrade('Quindecillion fingers','The mouse and cursors gain <b>+1e+15</b> cookies for each non-cursor object owned.<q>For when fingers and cursors become mighty fingers...</q>',1e44,[12,19]);Game.MakeTiered(Game.last,17,0);
+		new Game.Upgrade('Quattuordecillion fingers','The mouse and cursors gain <b>+1e+13</b> cookies for each non-cursor object owned.<q>The skilled fingers to click for free subscribers.</q>',1e40,[12,19]);Game.MakeTiered(Game.last,18,0);
+		new Game.Upgrade('Quindecillion fingers','The mouse and cursors gain <b>+1e+15</b> cookies for each non-cursor object owned.<q>For when fingers and cursors become mighty fingers...</q>',1e44,[12,19]);Game.MakeTiered(Game.last,19,0);
 		
 		order=0;
 		new Game.Upgrade('Tin of british tea biscuits','Contains an assortment of fancy biscuits.<q>Every time is tea time.</q>',25,[21,8]);Game.last.pool='prestige';Game.last.parents=['Heavenly cookies'];
