@@ -7435,7 +7435,7 @@ Game.Launch=function()
 			if (this.amount>=1000) Game.Unlock('Quattuordecillion fingers');
 			if (this.amount>=1100) Game.Unlock('Quindecillion fingers');
 			
-			if (this.amount>=1) Game.Win('Click');if (this.amount>=2) Game.Win('Double-click');if (this.amount>=50) Game.Win('Mouse wheel');if (this.amount>=100) Game.Win('Of Mice and Men');if (this.amount>=200) Game.Win('The Digital');if (this.amount>=300) Game.Win('Extreme polydactyly');if (this.amount>=400) Game.Win('Dr. T');if (this.amount>=500) Game.Win('Thumbs, phalanges, metacarpals');if (this.amount>=600) Game.Win('With her finger and her thumb');
+			if (this.amount>=1) Game.Win('Click');if (this.amount>=2) Game.Win('Double-click');if (this.amount>=50) Game.Win('Mouse wheel');if (this.amount>=100) Game.Win('Of Mice and Men');if (this.amount>=200) Game.Win('The Digital');if (this.amount>=300) Game.Win('Extreme polydactyly');if (this.amount>=400) Game.Win('Dr. T');if (this.amount>=500) Game.Win('Thumbs, phalanges, metacarpals');if (this.amount>=600) Game.Win('With her finger and her thumb');if (this.amount>=700) Game.Win('Special hands');if (this.amount>=800) Game.Win('Middle finger');if (this.amount>=900) Game.Win('Power thumb');if (this.amount>=1000) Game.Win('Super fingers');if (this.amount>=1250) Game.Win('Ultra fingers');if (this.amount>=1500) Game.Win('God fingers');
 		});
 		
 		Game.SpecialGrandmaUnlock=15;
@@ -10787,6 +10787,12 @@ Game.Launch=function()
 		
 		order=1050;
 		new Game.Achievement('With her finger and her thumb','Have <b>600</b> cursors.',[0,16]);
+		new Game.Achievement('Special hands','Have <b>700</b> cursors.',[0,17]);
+		new Game.Achievement('Middle finger','Have <b>800</b> cursors.',[0,18]);
+		new Game.Achievement('Power thumb','Have <b>900</b> cursors.',[0,19]);
+		new Game.Achievement('Super fingers','Have <b>1000</b> cursors.',[0,20]);
+		new Game.Achievement('Ultra fingers','Have <b>1250</b> cursors.',[0,21]);
+		new Game.Achievement('God fingers','Have <b>1500</b> cursors.',[0,22]);
 		
 		order=1100;Game.TieredAchievement('But wait \'til you get older','Have <b>550</b> grandmas.','Grandma',12);
 		order=1200;Game.TieredAchievement('Sharpest tool in the shed','Have <b>500</b> farms.','Farm',11);
