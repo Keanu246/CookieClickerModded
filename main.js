@@ -7401,8 +7401,8 @@ Game.Launch=function()
 			if (Game.Has('Decillion fingers')) add+=	1000000000;
 			if (Game.Has('Undecillion fingers')) add+=	10000000000;
 			if (Game.Has('Duodecillion fingers')) add+=	100000000000;
-			if (Game.Has('Tredecillion fingers')) add+=	1000000000000;
-			if (Game.Has('Quattuordecillion fingers')) add+=	10000000000000;
+			if (Game.Has('Tredecillion fingers')) add+=     1000000000000;
+			if (Game.Has('Quattuordecillion fingers')) add+=     10000000000000;
 			if (Game.Has('Quindecillion fingers')) add+=	1000000000000000;
 			var mult=1;
 			var num=0;
@@ -8671,8 +8671,8 @@ Game.Launch=function()
 		order=100;
 		new Game.Upgrade('Septillion fingers','The mouse and cursors gain <b>+500000</b> cookies for each non-cursor object owned.<q>[cursory flavor text]</q>',10000000000000000000,[12,20]);Game.MakeTiered(Game.last,11,0);
 		new Game.Upgrade('Octillion fingers','The mouse and cursors gain <b>+5000000</b> cookies for each non-cursor object owned.<q>Turns out you <b>can</b> quite put your finger on it.</q>',10000000000000000000000,[12,19]);Game.MakeTiered(Game.last,12,0);
-		new Game.Upgrade('Nonillion fingers','The mouse and cursors gain <b>+100000000</b> cookies for each non-cursor object owned.<q>The best fingers in the world.</q>',10000000000000000000000000,[12,19]);Game.MakeTiered(Game.last,12,0);
-		new Game.Upgrade('Decillion fingers','The mouse and cursors gain <b>+1000000000</b> cookies for each non-cursor object owned.<q>Hands are the best within an million fingers.</q>',10000000000000000000000000,[12,19]);Game.MakeTiered(Game.last,12,0);
+		new Game.Upgrade('Nonillion fingers','The mouse and cursors gain <b>+100000000</b> cookies for each non-cursor object owned.<q>The best fingers in the world.</q>',10000000000000000000000000,[12,19]);Game.MakeTiered(Game.last,13,0);
+		new Game.Upgrade('Decillion fingers','The mouse and cursors gain <b>+1000000000</b> cookies for each non-cursor object owned.<q>Hands are the best within an million fingers.</q>',10000000000000000000000000,[12,19]);Game.MakeTiered(Game.last,14,0);
 		
 		order=150;new Game.Upgrade('Eludium mouse','Clicking gains <b>+1% of your CpS</b>.<q>I rodent do that if I were you.</q>',500000000000000,[11,15]);Game.MakeTiered(Game.last,6,11);
 		new Game.Upgrade('Wishalloy mouse','Clicking gains <b>+1% of your CpS</b>.<q>Clicking is fine and dandy, but don\'t smash your mouse over it. Get your game on. Go play.</q>',50000000000000000,[11,16]);Game.MakeTiered(Game.last,7,11);
@@ -8827,11 +8827,11 @@ Game.Launch=function()
 		Game.GrandmaSynergy('Witch grandmas','A nice witch to cast a zip, and a zoop, and poof! Cookies.','Wizard tower');
 		
 		order=100;
-		new Game.Upgrade('Undecillion fingers','The mouse and cursors gain <b>+1000000000</b> cookies for each non-cursor object owned.<q>Too many cursors...</q>',10000000000000000000000000000,[12,19]);Game.MakeTiered(Game.last,12,0);
-		new Game.Upgrade('Duodecillion fingers','The mouse and cursors gain <b>+10000000000</b> cookies for each non-cursor object owned.<q>Too much clicks...</q>',10000000000000000000000000000000,[12,19]);Game.MakeTiered(Game.last,12,0);
-		new Game.Upgrade('Tredecillion fingers','The mouse and cursors gain <b>+100000000000</b> cookies for each non-cursor object owned.<q>The best fingers to click for free views.</q>',10000000000000000000000000000000000,[12,19]);Game.MakeTiered(Game.last,12,0);
-		new Game.Upgrade('Quattuordecillion fingers','The mouse and cursors gain <b>+1000000000000</b> cookies for each non-cursor object owned.<q>The skilled fingers to click for free subscribers.</q>',10000000000000000000000000000000000000,[12,19]);Game.MakeTiered(Game.last,12,0);
-		new Game.Upgrade('Quindecillion fingers','The mouse and cursors gain <b>+100000000000000</b> cookies for each non-cursor object owned.<q>For when fingers and cursors become mighty fingers...</q>',100000000000000000000000000000000000000000,[12,19]);Game.MakeTiered(Game.last,12,0);
+		new Game.Upgrade('Undecillion fingers','The mouse and cursors gain <b>+1000000000</b> cookies for each non-cursor object owned.<q>Too many cursors...</q>',10000000000000000000000000000,[12,19]);Game.MakeTiered(Game.last,15,0);
+		new Game.Upgrade('Duodecillion fingers','The mouse and cursors gain <b>+10000000000</b> cookies for each non-cursor object owned.<q>Too much clicks...</q>',10000000000000000000000000000000,[12,19]);Game.MakeTiered(Game.last,16,0);
+		new Game.Upgrade('Tredecillion fingers','The mouse and cursors gain <b>+100000000000</b> cookies for each non-cursor object owned.<q>The best fingers to click for free views.</q>',10000000000000000000000000000000000,[12,19]);Game.MakeTiered(Game.last,17,0);
+		new Game.Upgrade('Quattuordecillion fingers','The mouse and cursors gain <b>+1000000000000</b> cookies for each non-cursor object owned.<q>The skilled fingers to click for free subscribers.</q>',10000000000000000000000000000000000000,[12,19]);Game.MakeTiered(Game.last,17,0);
+		new Game.Upgrade('Quindecillion fingers','The mouse and cursors gain <b>+100000000000000</b> cookies for each non-cursor object owned.<q>For when fingers and cursors become mighty fingers...</q>',100000000000000000000000000000000000000000,[12,19]);Game.MakeTiered(Game.last,17,0);
 		
 		order=0;
 		new Game.Upgrade('Tin of british tea biscuits','Contains an assortment of fancy biscuits.<q>Every time is tea time.</q>',25,[21,8]);Game.last.pool='prestige';Game.last.parents=['Heavenly cookies'];
@@ -9731,9 +9731,9 @@ Game.Launch=function()
 		
 		order=20000;
 		new Game.Upgrade('Kitten executives','You gain <b>more CpS</b> the more milk you have.<q>ready to execute whatever and whoever you\'d like, sir</q>',900000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
-		new Game.Upgrade('Kitten masters','You gain <b>more CpS</b> the more milk you have.<q>we are masters, sir</q>',900000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,14,19);
-		new Game.Upgrade('Kitten solos','You gain <b>more CpS</b> the more milk you have.<q>we are a solo team, sir</q>',900000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,15,20);
-		new Game.Upgrade('Kitten duos','You gain <b>more CpS</b> the more milk you have.<q>we are duos in 2 teams, sir</q>',900000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,16,21);
+		new Game.Upgrade('Kitten masters','You gain <b>more CpS</b> the more milk you have.<q>we are masters, sir</q>',900000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,14,18);
+		new Game.Upgrade('Kitten solos','You gain <b>more CpS</b> the more milk you have.<q>we are a solo team, sir</q>',900000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,15,18);
+		new Game.Upgrade('Kitten duos','You gain <b>more CpS</b> the more milk you have.<q>we are duos in 2 teams, sir</q>',900000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,16,18);
 		
 		order=10020;
 		Game.NewUpgradeCookie({name:'Chai tea cookies',desc:'Not exactly Captain Picard\'s favorite, but I mean, these will do in a pinch.',icon:[23,32],power:						5,price: getCookiePrice(4)+5});Game.last.order=10020.5685;
