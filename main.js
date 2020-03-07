@@ -4115,13 +4115,13 @@ Game.Launch=function()
 			if (Game.Has('Kitten analysts')) catMult*=(1+Game.milkProgress*0.125*milkMult);
 			if (Game.Has('Kitten executives')) catMult*=(1+Game.milkProgress*0.115*milkMult);
 			if (Game.Has('Kitten angels')) catMult*=(1+Game.milkProgress*0.1*milkMult);
-			if (Game.Has('Fortune #103')) catMult*=(1+Game.milkProgress*0.05*milkMult);
 			if (Game.Has('Kitten masters')) catMult*=(1+Game.milkProgress*0.25*milkMult);
 			if (Game.Has('Kitten solos')) catMult*=(1+Game.milkProgress*0.3*milkMult);
 			if (Game.Has('Kitten duos')) catMult*=(1+Game.milkProgress*0.3*milkMult);
 			if (Game.Has('Kitten trios')) catMult*=(1+Game.milkProgress*0.3*milkMult);
 			if (Game.Has('Kitten squads')) catMult*=(1+Game.milkProgress*0.3*milkMult);
 			if (Game.Has('Kitten elites')) catMult*=(1+Game.milkProgress*0.35*milkMult);
+			if (Game.Has('Fortune #103')) catMult*=(1+Game.milkProgress*0.05*milkMult);
 			
 			Game.cookiesMultByType['kittens']=catMult;
 			mult*=catMult;
