@@ -13122,7 +13122,7 @@ Game.Launch=function()
 			Game.mousePointer=0;
 			
 			//handle milk and milk accessories
-			Game.milkProgress=Game.AchievementsOwned/31;
+			Game.milkProgress=Game.AchievementsOwned/25;
 			if (Game.milkProgress>=0.5) Game.Unlock('Kitten helpers');
 			if (Game.milkProgress>=1) Game.Unlock('Kitten workers');
 			if (Game.milkProgress>=2) Game.Unlock('Kitten engineers');
