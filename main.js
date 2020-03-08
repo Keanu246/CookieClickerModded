@@ -4130,6 +4130,8 @@ Game.Launch=function()
 			if (Game.Has('Kitten odyssey')) catMult*=(1+Game.milkProgress*0.45*milkMult);
 			if (Game.Has('Kitten mania')) catMult*=(1+Game.milkProgress*0.5*milkMult);
 			if (Game.Has('Kitten world')) catMult*=(1+Game.milkProgress*0.5*milkMult);
+			if (Game.Has('Kitten coders')) catMult*=(1+Game.milkProgress*0.6*milkMult);
+			if (Game.Has('Kitten powers to victory')) catMult*=(1+Game.milkProgress*0.6*milkMult);
 			if (Game.Has('Kitten gods')) catMult*=(1+Game.milkProgress*0.75*milkMult);
 			if (Game.Has('Kitten angels')) catMult*=(1+Game.milkProgress*0.1*milkMult);
 			if (Game.Has('Fortune #103')) catMult*=(1+Game.milkProgress*0.05*milkMult);
@@ -9819,7 +9821,9 @@ Game.Launch=function()
 		order=20000;
 		new Game.Upgrade('Kitten mania','You gain <b>more CpS</b> the more milk you have.<q>This is Kitten Mania with our rooms, play centre and other types of rooms, sir</q>',9e87,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
 		new Game.Upgrade('Kitten world','You gain <b>more CpS</b> the more milk you have.<q>Welcome to Kitten World, sir</q>',9e95,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
-		new Game.Upgrade('Kitten gods','You gain <b>more CpS</b> the more milk you have.<q>we are gods of all cats, sir</q>',9e103,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
+		new Game.Upgrade('Kitten coders','You gain <b>more CpS</b> the more milk you have.<q>We are hackers and coders, sir</q>',9e103,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
+		new Game.Upgrade('Kitten powers to victory','You gain <b>more CpS</b> the more milk you have.<q>Power your stuff and your items, sir</q>',9e111,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
+		new Game.Upgrade('Kitten gods','You gain <b>more CpS</b> the more milk you have.<q>we are gods of all cats, sir</q>',9e121,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
 		
 		order=19100;
 		//note : price for these capped to base price OR 1 day of unbuffed CpS
@@ -13213,7 +13217,9 @@ Game.Launch=function()
 			if (Game.milkProgress>=15) Game.Unlock('Kitten odyssey');
 			if (Game.milkProgress>=15) Game.Unlock('Kitten mania');
 			if (Game.milkProgress>=15) Game.Unlock('Kitten world');
-			if (Game.milkProgress>=15) Game.Unlock('Kitten gods');
+			if (Game.milkProgress>=15) Game.Unlock('Kitten coders');
+			if (Game.milkProgress>=16) Game.Unlock('Kitten powers to victory');
+			if (Game.milkProgress>=16) Game.Unlock('Kitten gods');
 			Game.milkH=Math.min(1,Game.milkProgress)*0.35;
 			Game.milkHd+=(Game.milkH-Game.milkHd)*0.02;
 			
