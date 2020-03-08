@@ -3772,8 +3772,11 @@ Game.Launch=function()
 			if (Game.Has('Undecillion fingers')) add+=	10000000000;
 			if (Game.Has('Duodecillion fingers')) add+=	100000000000;
 			if (Game.Has('Tredecillion fingers')) add+=	1000000000000;
-			if (Game.Has('Quattuordecillion fingers')) add+=	10000000000000;
+			if (Game.Has('Quattuordecillion fingers')) add+=     10000000000000;
 			if (Game.Has('Quindecillion fingers')) add+=	1000000000000000;
+			if (Game.Has('Sexdecillion fingers')) add+=	1e16;
+			if (Game.Has('Septendecillion fingers')) add+=	1e18;
+			if (Game.Has('Octodecillion fingers')) add+=	1e20;
 			var num=0;
 			for (var i in Game.Objects) {num+=Game.Objects[i].amount;}
 			num-=Game.Objects['Cursor'].amount;
@@ -7407,6 +7410,9 @@ Game.Launch=function()
 			if (Game.Has('Tredecillion fingers')) add+=     1000000000000;
 			if (Game.Has('Quattuordecillion fingers')) add+=     10000000000000;
 			if (Game.Has('Quindecillion fingers')) add+=	1000000000000000;
+			if (Game.Has('Sexdecillion fingers')) add+=     1e16;
+			if (Game.Has('Septendecillion fingers')) add+=     1e18;
+			if (Game.Has('Octodecillion fingers')) add+=	1e20;
 			var mult=1;
 			var num=0;
 			for (var i in Game.Objects) {if (Game.Objects[i].name!='Cursor') num+=Game.Objects[i].amount;}
@@ -7434,6 +7440,9 @@ Game.Launch=function()
 			if (this.amount>=900) Game.Unlock('Tredecillion fingers');
 			if (this.amount>=1000) Game.Unlock('Quattuordecillion fingers');
 			if (this.amount>=1250) Game.Unlock('Quindecillion fingers');
+			if (this.amount>=1500) Game.Unlock('Sexdecillion fingers');
+			if (this.amount>=1750) Game.Unlock('Septendecillion fingers');
+			if (this.amount>=2000) Game.Unlock('Octodecillion fingers');
 			
 			if (this.amount>=1) Game.Win('Click');if (this.amount>=2) Game.Win('Double-click');if (this.amount>=50) Game.Win('Mouse wheel');if (this.amount>=100) Game.Win('Of Mice and Men');if (this.amount>=200) Game.Win('The Digital');if (this.amount>=300) Game.Win('Extreme polydactyly');if (this.amount>=400) Game.Win('Dr. T');if (this.amount>=500) Game.Win('Thumbs, phalanges, metacarpals');if (this.amount>=600) Game.Win('With her finger and her thumb');if (this.amount>=700) Game.Win('Special hands');if (this.amount>=800) Game.Win('Middle finger');if (this.amount>=900) Game.Win('Power thumb');if (this.amount>=1000) Game.Win('Super fingers');if (this.amount>=1250) Game.Win('Ultra fingers');if (this.amount>=1500) Game.Win('God fingers');
 		});
@@ -8830,11 +8839,14 @@ Game.Launch=function()
 		Game.GrandmaSynergy('Witch grandmas','A nice witch to cast a zip, and a zoop, and poof! Cookies.','Wizard tower');
 		
 		order=100;
-		new Game.Upgrade('Undecillion fingers','The mouse and cursors gain <b>+1e10</b> cookies for each non-cursor object owned.<q>Too many cursors...</q>',1e31,[12,19]);Game.MakeTiered(Game.last,15,0);
-		new Game.Upgrade('Duodecillion fingers','The mouse and cursors gain <b>+1e11</b> cookies for each non-cursor object owned.<q>Too much clicks...</q>',1e34,[12,19]);Game.MakeTiered(Game.last,16,0);
-		new Game.Upgrade('Tredecillion fingers','The mouse and cursors gain <b>+1e12</b> cookies for each non-cursor object owned.<q>The best fingers to click for free views.</q>',1e37,[12,19]);Game.MakeTiered(Game.last,17,0);
-		new Game.Upgrade('Quattuordecillion fingers','The mouse and cursors gain <b>+1e13</b> cookies for each non-cursor object owned.<q>The skilled fingers to click for free subscribers.</q>',1e40,[12,19]);Game.MakeTiered(Game.last,18,0);
-		new Game.Upgrade('Quindecillion fingers','The mouse and cursors gain <b>+1e15</b> cookies for each non-cursor object owned.<q>For when fingers and cursors become mighty fingers...</q>',1e44,[12,19]);Game.MakeTiered(Game.last,19,0);
+		new Game.Upgrade('Undecillion fingers','The mouse and cursors gain <b>+10 billion</b> cookies for each non-cursor object owned.<q>Too many cursors...</q>',1e31,[12,19]);Game.MakeTiered(Game.last,15,0);
+		new Game.Upgrade('Duodecillion fingers','The mouse and cursors gain <b>+100 billion</b> cookies for each non-cursor object owned.<q>Too much clicks...</q>',1e34,[12,19]);Game.MakeTiered(Game.last,16,0);
+		new Game.Upgrade('Tredecillion fingers','The mouse and cursors gain <b>+1 trillion</b> cookies for each non-cursor object owned.<q>The best fingers to click for free views.</q>',1e37,[12,19]);Game.MakeTiered(Game.last,17,0);
+		new Game.Upgrade('Quattuordecillion fingers','The mouse and cursors gain <b>+10 trillion</b> cookies for each non-cursor object owned.<q>The skilled fingers to click for free subscribers.</q>',1e40,[12,19]);Game.MakeTiered(Game.last,18,0);
+		new Game.Upgrade('Quindecillion fingers','The mouse and cursors gain <b>+1 quadrillion</b> cookies for each non-cursor object owned.<q>For when fingers and cursors become mighty fingers...</q>',1e44,[12,19]);Game.MakeTiered(Game.last,19,0);
+		new Game.Upgrade('Sexdecillion fingers','The mouse and cursors gain <b>+10 quadrillion</b> cookies for each non-cursor object owned.<q>An autoclicker means its cheating and just clicks...</q>',1e48,[12,19]);Game.MakeTiered(Game.last,19,0);
+		new Game.Upgrade('Septendecillion fingers','The mouse and cursors gain <b>+1 quintillion</b> cookies for each non-cursor object owned.<q>The most strongest hand in the world...</q>',1e53,[12,19]);Game.MakeTiered(Game.last,19,0);
+		new Game.Upgrade('Octodecillion fingers','The mouse and cursors gain <b>+100 quintillion</b> cookies for each non-cursor object owned.<q>Power fingers and thumbs make the best combination of the hands.</q>',1e58,[12,19]);Game.MakeTiered(Game.last,19,0);
 		
 		order=0;
 		new Game.Upgrade('Tin of british tea biscuits','Contains an assortment of fancy biscuits.<q>Every time is tea time.</q>',25,[21,8]);Game.last.pool='prestige';Game.last.parents=['Heavenly cookies'];
