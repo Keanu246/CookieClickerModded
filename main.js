@@ -6114,6 +6114,10 @@ Game.Launch=function()
 					if (Game.Has('Kitten elites')) list.push('News : special elite kitten reports for ultra powered kittens for it/s type of power, says local news kitten.');
 					if (Game.Has('Kitten lovers')) list.push('News : lovers are making boy kittens date girl kittens and giving out special chocolate cookies!');
 					if (Game.Has('Kitten paradise')) list.push('News : tropial island with kittens has made a paradise of kittens in Kitten World, says local news kitten.');
+					if (Game.Has('Kitten odyssey')) list.push('News : kittens bulit a odyssey from Super Mario Odyssey, and desired to go on an adventure.');
+					if (Game.Has('Kitten mania')) list.push('News : an mania of cats will be here within it/s limit. Also, they are nice to each other.');
+					if (Game.Has('Kitten world')) list.push('News : In Kitten World, our kittens we have is over 1 million population, says local news kitten.');
+					if (Game.Has('Kitten coders')) list.push('News : kitten hackers hacked over $50,000 worth of bank funds and they got caught, says news kitten.');
 					if (Game.Has('Kitten angels')) list.push('News : "Try to ignore any ghostly felines that may be purring inside your ears," warn scientists. "They\'ll just lure you into making poor life choices."');
 				}
 				
