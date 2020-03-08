@@ -9791,15 +9791,10 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Candy',desc:'There are two pillars to the world of sweets : pastries, of course - and candy.<br>You could make a whole new game just about these, but for now, please enjoy these assorted generic candies.',icon:[30,10],require:'Box of not cookies',		power:5,price: Math.pow(10,46)});
 		
 		order=20000;
-		new Game.Upgrade('Kitten world','You gain <b>more CpS</b> the more milk you have.<q>Welcome to Kitten World, sir</q>',9e95,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
-		new Game.Upgrade('Kitten gods','You gain <b>more CpS</b> the more milk you have.<q>we are gods of all cats, sir</q>',9e103,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
-		
-		order=20000;
 		new Game.Upgrade('Kitten elites','You gain <b>more CpS</b> the more milk you have.<q>we are a elite, sir</q>',9e63,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
 		new Game.Upgrade('Kitten lovers','You gain <b>more CpS</b> the more milk you have.<q>lovers of all times, sir</q>',9e69,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
 		new Game.Upgrade('Kitten paradise','You gain <b>more CpS</b> the more milk you have.<q>our tropial island with our kittens, sir</q>',9e72,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
 		new Game.Upgrade('Kitten odyssey','You gain <b>more CpS</b> the more milk you have.<q>our odyssey for the quest, sir</q>',9e78,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
-		new Game.Upgrade('Kitten mania','You gain <b>more CpS</b> the more milk you have.<q>This is Kitten Mania with our rooms, play centre and other types of rooms, sir</q>',9e87,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
 		
 		order=19000;
 		new Game.TieredUpgrade('Fortune #001','Cursors are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>Fingers are not the only thing you can count on.</q>','Cursor','fortune');
@@ -9819,6 +9814,11 @@ Game.Launch=function()
 		new Game.TieredUpgrade('Fortune #015','Chancemakers are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>Don\'t leave to blind chance what you could accomplish with deaf skill.</q>','Chancemaker','fortune');
 		new Game.TieredUpgrade('Fortune #016','Fractal engines are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>It\'s good to see yourself in others. Remember to see yourself in yourself, too.</q>','Fractal engine','fortune');
 		new Game.TieredUpgrade('Fortune #017','Javascript consoles are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>If things aren\'t working out for you, rewrite the rules.</q>','Javascript console','fortune');
+		
+		order=20000;
+		new Game.Upgrade('Kitten mania','You gain <b>more CpS</b> the more milk you have.<q>This is Kitten Mania with our rooms, play centre and other types of rooms, sir</q>',9e87,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
+		new Game.Upgrade('Kitten world','You gain <b>more CpS</b> the more milk you have.<q>Welcome to Kitten World, sir</q>',9e95,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
+		new Game.Upgrade('Kitten gods','You gain <b>more CpS</b> the more milk you have.<q>we are gods of all cats, sir</q>',9e103,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
 		
 		
 		order=19100;
@@ -13188,7 +13188,7 @@ Game.Launch=function()
 			Game.mousePointer=0;
 			
 			//handle milk and milk accessories
-			Game.milkProgress=Game.AchievementsOwned/20;
+			Game.milkProgress=Game.AchievementsOwned/25;
 			if (Game.milkProgress>=1) Game.Unlock('Kitten helpers');
 			if (Game.milkProgress>=1) Game.Unlock('Kitten workers');
 			if (Game.milkProgress>=2) Game.Unlock('Kitten engineers');
@@ -13212,8 +13212,8 @@ Game.Launch=function()
 			if (Game.milkProgress>=14) Game.Unlock('Kitten paradise');
 			if (Game.milkProgress>=15) Game.Unlock('Kitten odyssey');
 			if (Game.milkProgress>=15) Game.Unlock('Kitten mania');
-			if (Game.milkProgress>=16) Game.Unlock('Kitten world');
-			if (Game.milkProgress>=16) Game.Unlock('Kitten gods');
+			if (Game.milkProgress>=15) Game.Unlock('Kitten world');
+			if (Game.milkProgress>=15) Game.Unlock('Kitten gods');
 			Game.milkH=Math.min(1,Game.milkProgress)*0.35;
 			Game.milkHd+=(Game.milkH-Game.milkHd)*0.02;
 			
