@@ -6108,6 +6108,8 @@ Game.Launch=function()
 					if (Game.Has('Kitten trios')) list.push('News : kittens in 3 teams each and with 99 cats battling against other trios for guns and loot!');
 					if (Game.Has('Kitten squads')) list.push('News : kittens in an squad each and with 100 cats battling against other squads for guns and loot!');
 					if (Game.Has('Kitten elites')) list.push('News : special elite kitten reports for ultra powered kittens for it/s type of power, says local news kitten.');
+					if (Game.Has('Kitten lovers')) list.push('News : lovers are making boy kittens date girl kittens and giving out special chocolate cookies!');
+					if (Game.Has('Kitten paradise')) list.push('News : tropial island with kittens has made a paradise of kittens in Kitten World, says local news kitten.');
 					if (Game.Has('Kitten angels')) list.push('News : "Try to ignore any ghostly felines that may be purring inside your ears," warn scientists. "They\'ll just lure you into making poor life choices."');
 				}
 				
