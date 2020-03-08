@@ -6102,6 +6102,12 @@ Game.Launch=function()
 					if (Game.Has('Kitten marketeers')) list.push('News : nonsensical billboards crop up all over countryside, trying to sell people the cookies they already get for free!');
 					if (Game.Has('Kitten analysts')) list.push('News : are your spending habits sensible? For a hefty fee, these analysts will tell you!');
 					if (Game.Has('Kitten executives')) list.push('News : kittens strutting around in hot little business suits shouting cut-throat orders at their assistants, possibly the cutest thing this reporter has ever seen!');
+					if (Game.Has('Kitten masters')) list.push('News : kittens do kung fu training and become ninjas! And they fighting other enemies!');
+					if (Game.Has('Kitten solos')) list.push('News : kittens are in Fortnite with 100 cats battling against solo kittens for guns and loot!');
+					if (Game.Has('Kitten duos')) list.push('News : kittens are in teams in duos with 100 cats battling against other duos for guns and loot!');
+					if (Game.Has('Kitten trios')) list.push('News : kittens in 3 teams each and with 99 cats battling against other trios for guns and loot!');
+					if (Game.Has('Kitten squads')) list.push('News : kittens in an squad each and with 100 cats battling against other squads for guns and loot!');
+					if (Game.Has('Kitten elites')) list.push('News : special elite kitten reports for ultra powered kittens for it/s type of power, says local news kitten.');
 					if (Game.Has('Kitten angels')) list.push('News : "Try to ignore any ghostly felines that may be purring inside your ears," warn scientists. "They\'ll just lure you into making poor life choices."');
 				}
 				
