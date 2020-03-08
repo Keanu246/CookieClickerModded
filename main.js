@@ -7462,7 +7462,7 @@ Game.Launch=function()
 			if (this.amount>=2000) Game.Unlock('Novemdecillion fingers');
 			if (this.amount>=2000) Game.Unlock('Vigintillion fingers');
 			
-			if (this.amount>=1) Game.Win('Click');if (this.amount>=2) Game.Win('Double-click');if (this.amount>=50) Game.Win('Mouse wheel');if (this.amount>=100) Game.Win('Of Mice and Men');if (this.amount>=200) Game.Win('The Digital');if (this.amount>=300) Game.Win('Extreme polydactyly');if (this.amount>=400) Game.Win('Dr. T');if (this.amount>=500) Game.Win('Thumbs, phalanges, metacarpals');if (this.amount>=600) Game.Win('With her finger and her thumb');if (this.amount>=700) Game.Win('Special hands');if (this.amount>=800) Game.Win('Middle finger');if (this.amount>=900) Game.Win('Power thumb');if (this.amount>=1000) Game.Win('Super fingers');if (this.amount>=1250) Game.Win('Ultra fingers');if (this.amount>=1500) Game.Win('Hell fingers');if (this.amount>=1750) Game.Win('Heaven fingers');if (this.amount>=2000) Game.Win('God fingers');if (this.amount>=2100) Game.Win('God fingers II');if (this.amount>=2200) Game.Win('God fingers III');if (this.amount>=2300) Game.Win('God fingers IV');if (this.amount>=2400) Game.Win('God fingers V');
+			if (this.amount>=1) Game.Win('Click');if (this.amount>=2) Game.Win('Double-click');if (this.amount>=50) Game.Win('Mouse wheel');if (this.amount>=100) Game.Win('Of Mice and Men');if (this.amount>=200) Game.Win('The Digital');if (this.amount>=300) Game.Win('Extreme polydactyly');if (this.amount>=400) Game.Win('Dr. T');if (this.amount>=500) Game.Win('Thumbs, phalanges, metacarpals');if (this.amount>=600) Game.Win('With her finger and her thumb');if (this.amount>=700) Game.Win('Special hands');if (this.amount>=800) Game.Win('Middle finger');if (this.amount>=900) Game.Win('Power thumb');if (this.amount>=1000) Game.Win('Super fingers');if (this.amount>=1250) Game.Win('Ultra fingers');if (this.amount>=1500) Game.Win('Hell fingers');if (this.amount>=1750) Game.Win('Heaven fingers');if (this.amount>=2000) Game.Win('God fingers');if (this.amount>=2100) Game.Win('God fingers II');if (this.amount>=2200) Game.Win('God fingers III');if (this.amount>=2300) Game.Win('God fingers IV');if (this.amount>=2400) Game.Win('God fingers V');if (this.amount>=2500) Game.Win('God fingers VI');if (this.amount>=2600) Game.Win('God fingers VII');if (this.amount>=2700) Game.Win('God fingers VIII');if (this.amount>=2800) Game.Win('God fingers IX');if (this.amount>=3000) Game.Win('God fingers X');
 		});
 		
 		Game.SpecialGrandmaUnlock=15;
@@ -10838,6 +10838,11 @@ Game.Launch=function()
 		new Game.Achievement('God fingers III','Have <b>2200</b> cursors.',[0,26]);
 		new Game.Achievement('God fingers IV','Have <b>2300</b> cursors.',[0,27]);
 		new Game.Achievement('God fingers V','Have <b>2400</b> cursors.',[0,28]);
+		new Game.Achievement('God fingers VI','Have <b>2500</b> cursors.',[0,29]);
+		new Game.Achievement('God fingers VII','Have <b>2600</b> cursors.',[0,30]);
+		new Game.Achievement('God fingers VIII','Have <b>2700</b> cursors.',[0,31]);
+		new Game.Achievement('God fingers IX','Have <b>2800</b> cursors.',[0,32]);
+		new Game.Achievement('God fingers X','Have <b>3000</b> cursors.',[0,33]);
 		
 		order=1100;Game.TieredAchievement('But wait \'til you get older','Have <b>550</b> grandmas.','Grandma',12);
 		order=1200;Game.TieredAchievement('Sharpest tool in the shed','Have <b>500</b> farms.','Farm',11);
