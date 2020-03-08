@@ -10845,6 +10845,9 @@ Game.Launch=function()
 		new Game.Achievement('God fingers X','Have <b>3000</b> cursors.',[0,33]);
 		
 		order=1100;Game.TieredAchievement('But wait \'til you get older','Have <b>550</b> grandmas.','Grandma',12);
+		order=1100;Game.TieredAchievement('Best grandmas in the world','Have <b>600</b> grandmas.','Grandma',13);
+		order=1100;Game.TieredAchievement('Grandma champions','Have <b>700</b> grandmas.','Grandma',14);
+		order=1100;Game.TieredAchievement('Grandma will help you a lot','Have <b>800</b> grandmas.','Grandma',15);
 		order=1200;Game.TieredAchievement('Sharpest tool in the shed','Have <b>500</b> farms.','Farm',11);
 		order=1300;Game.TieredAchievement('Hey now, you\'re a rock','Have <b>500</b> mines.','Mine',11);
 		order=1400;Game.TieredAchievement('Break the mold','Have <b>500</b> factories.','Factory',11);
