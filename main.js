@@ -8189,6 +8189,7 @@ Game.Launch=function()
 			17:{name:'Super',unlock:800,achievUnlock:800,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000000000000000},
 			18:{name:'Elite',unlock:900,achievUnlock:900,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000000000000000000},
 			19:{name:'Ultra',unlock:1000,achievUnlock:1000,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000000000000000000000},
+			20:{name:'God',unlock:1000,achievUnlock:1000,iconRow:31,color:'#8ab437',price:			500000000000000000000000000000000000000000000000000000},
 			'synergy1':{name:'Synergy I',unlock:15,iconRow:20,color:'#008595',special:1,req:'Synergies Vol. I',price:			200000},
 			'synergy2':{name:'Synergy II',unlock:75,iconRow:29,color:'#008595',special:1,req:'Synergies Vol. II',price:			200000000000},
 			'fortune':{name:'Fortune',unlock:-1,iconRow:32,color:'#9ab834',special:1,price:				77777777777777777777777777777},
@@ -8864,11 +8865,11 @@ Game.Launch=function()
 		new Game.Upgrade('Tredecillion fingers','The mouse and cursors gain <b>+1 trillion</b> cookies for each non-cursor object owned.<q>The best fingers to click for free views.</q>',1e37,[12,19]);Game.MakeTiered(Game.last,17,0);
 		new Game.Upgrade('Quattuordecillion fingers','The mouse and cursors gain <b>+10 trillion</b> cookies for each non-cursor object owned.<q>The skilled fingers to click for free subscribers.</q>',1e40,[12,19]);Game.MakeTiered(Game.last,18,0);
 		new Game.Upgrade('Quindecillion fingers','The mouse and cursors gain <b>+1 quadrillion</b> cookies for each non-cursor object owned.<q>For when fingers and cursors become mighty fingers...</q>',1e44,[12,19]);Game.MakeTiered(Game.last,19,0);
-		new Game.Upgrade('Sexdecillion fingers','The mouse and cursors gain <b>+10 quadrillion</b> cookies for each non-cursor object owned.<q>An autoclicker means its cheating and just clicks...</q>',1e48,[12,19]);Game.MakeTiered(Game.last,19,0);
-		new Game.Upgrade('Septendecillion fingers','The mouse and cursors gain <b>+1 quintillion</b> cookies for each non-cursor object owned.<q>The most strongest hand in the world...</q>',1e53,[12,19]);Game.MakeTiered(Game.last,19,0);
-		new Game.Upgrade('Octodecillion fingers','The mouse and cursors gain <b>+100 quintillion</b> cookies for each non-cursor object owned.<q>Power fingers and thumbs make the best combination of the hands.</q>',1e58,[12,19]);Game.MakeTiered(Game.last,19,0);
-		new Game.Upgrade('Novemdecillion fingers','The mouse and cursors gain <b>+10 sextillion</b> cookies for each non-cursor object owned.<q>A cloning machine that will make millions of fingers.</q>',1e65,[12,19]);Game.MakeTiered(Game.last,19,0);
-		new Game.Upgrade('Vigintillion fingers','The mouse and cursors gain <b>+1 septillion</b> cookies for each non-cursor object owned.<q>1 vigintillion fingers dominate the world?</q>',1e73,[12,19]);Game.MakeTiered(Game.last,19,0);
+		new Game.Upgrade('Sexdecillion fingers','The mouse and cursors gain <b>+10 quadrillion</b> cookies for each non-cursor object owned.<q>An autoclicker means its cheating and just clicks...</q>',1e48,[12,19]);Game.MakeTiered(Game.last,20,0);
+		new Game.Upgrade('Septendecillion fingers','The mouse and cursors gain <b>+1 quintillion</b> cookies for each non-cursor object owned.<q>The most strongest hand in the world...</q>',1e53,[12,19]);Game.MakeTiered(Game.last,20,0);
+		new Game.Upgrade('Octodecillion fingers','The mouse and cursors gain <b>+100 quintillion</b> cookies for each non-cursor object owned.<q>Power fingers and thumbs make the best combination of the hands.</q>',1e58,[12,19]);Game.MakeTiered(Game.last,20,0);
+		new Game.Upgrade('Novemdecillion fingers','The mouse and cursors gain <b>+10 sextillion</b> cookies for each non-cursor object owned.<q>A cloning machine that will make millions of fingers.</q>',1e65,[12,19]);Game.MakeTiered(Game.last,20,0);
+		new Game.Upgrade('Vigintillion fingers','The mouse and cursors gain <b>+1 septillion</b> cookies for each non-cursor object owned.<q>1 vigintillion fingers dominate the world?</q>',1e73,[12,19]);Game.MakeTiered(Game.last,20,0);
 		
 		order=0;
 		new Game.Upgrade('Tin of british tea biscuits','Contains an assortment of fancy biscuits.<q>Every time is tea time.</q>',25,[21,8]);Game.last.pool='prestige';Game.last.parents=['Heavenly cookies'];
@@ -9792,9 +9793,9 @@ Game.Launch=function()
 		
 		order=20000;
 		new Game.Upgrade('Kitten elites','You gain <b>more CpS</b> the more milk you have.<q>we are a elite, sir</q>',9e63,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
-		new Game.Upgrade('Kitten lovers','You gain <b>more CpS</b> the more milk you have.<q>lovers of all times, sir</q>',9e69,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
-		new Game.Upgrade('Kitten paradise','You gain <b>more CpS</b> the more milk you have.<q>our tropial island with our kittens, sir</q>',9e72,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
-		new Game.Upgrade('Kitten odyssey','You gain <b>more CpS</b> the more milk you have.<q>our odyssey for the quest, sir</q>',9e78,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
+		new Game.Upgrade('Kitten lovers','You gain <b>more CpS</b> the more milk you have.<q>lovers of all times, sir</q>',9e69,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
+		new Game.Upgrade('Kitten paradise','You gain <b>more CpS</b> the more milk you have.<q>our tropial island with our kittens, sir</q>',9e72,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
+		new Game.Upgrade('Kitten odyssey','You gain <b>more CpS</b> the more milk you have.<q>our odyssey for the quest, sir</q>',9e78,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
 		
 		order=19000;
 		new Game.TieredUpgrade('Fortune #001','Cursors are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>Fingers are not the only thing you can count on.</q>','Cursor','fortune');
@@ -9816,10 +9817,9 @@ Game.Launch=function()
 		new Game.TieredUpgrade('Fortune #017','Javascript consoles are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>If things aren\'t working out for you, rewrite the rules.</q>','Javascript console','fortune');
 		
 		order=20000;
-		new Game.Upgrade('Kitten mania','You gain <b>more CpS</b> the more milk you have.<q>This is Kitten Mania with our rooms, play centre and other types of rooms, sir</q>',9e87,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
-		new Game.Upgrade('Kitten world','You gain <b>more CpS</b> the more milk you have.<q>Welcome to Kitten World, sir</q>',9e95,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
-		new Game.Upgrade('Kitten gods','You gain <b>more CpS</b> the more milk you have.<q>we are gods of all cats, sir</q>',9e103,Game.GetIcon('Kitten',19));Game.last.kitten=1;Game.MakeTiered(Game.last,19,18);
-		
+		new Game.Upgrade('Kitten mania','You gain <b>more CpS</b> the more milk you have.<q>This is Kitten Mania with our rooms, play centre and other types of rooms, sir</q>',9e87,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
+		new Game.Upgrade('Kitten world','You gain <b>more CpS</b> the more milk you have.<q>Welcome to Kitten World, sir</q>',9e95,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
+		new Game.Upgrade('Kitten gods','You gain <b>more CpS</b> the more milk you have.<q>we are gods of all cats, sir</q>',9e103,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
 		
 		order=19100;
 		//note : price for these capped to base price OR 1 day of unbuffed CpS
@@ -10858,12 +10858,12 @@ Game.Launch=function()
 		order=1100;Game.TieredAchievement('80 years old','Have <b>1000</b> grandmas.','Grandma',17);
 		order=1100;Game.TieredAchievement('100 years old','Have <b>1250</b> grandmas.','Grandma',18);
 		order=1100;Game.TieredAchievement('Grandma Mania','Have <b>1500</b> grandmas.','Grandma',19);
-		order=1100;Game.TieredAchievement('Grandma Apocalypse','Have <b>1750</b> grandmas.','Grandma',19);
-		order=1100;Game.TieredAchievement('Super grandmas','Have <b>2000</b> grandmas.','Grandma',19);
-		order=1100;Game.TieredAchievement('Super grandmas II','Have <b>2250</b> grandmas.','Grandma',19);
-		order=1100;Game.TieredAchievement('Super grandmas III','Have <b>2500</b> grandmas.','Grandma',19);
-		order=1100;Game.TieredAchievement('Super grandmas IV','Have <b>2750</b> grandmas.','Grandma',19);
-		order=1100;Game.TieredAchievement('Super grandmas V','Have <b>3000</b> grandmas.','Grandma',19);
+		order=1100;Game.TieredAchievement('Grandma Apocalypse','Have <b>1750</b> grandmas.','Grandma',20);
+		order=1100;Game.TieredAchievement('Super grandmas','Have <b>2000</b> grandmas.','Grandma',21);
+		order=1100;Game.TieredAchievement('Super grandmas II','Have <b>2250</b> grandmas.','Grandma',22);
+		order=1100;Game.TieredAchievement('Super grandmas III','Have <b>2500</b> grandmas.','Grandma',23);
+		order=1100;Game.TieredAchievement('Super grandmas IV','Have <b>2750</b> grandmas.','Grandma',24);
+		order=1100;Game.TieredAchievement('Super grandmas V','Have <b>3000</b> grandmas.','Grandma',25);
 		order=1200;Game.TieredAchievement('Sharpest tool in the shed','Have <b>500</b> farms.','Farm',11);
 		order=1300;Game.TieredAchievement('Hey now, you\'re a rock','Have <b>500</b> mines.','Mine',11);
 		order=1400;Game.TieredAchievement('Break the mold','Have <b>500</b> factories.','Factory',11);
