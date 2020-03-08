@@ -8191,7 +8191,7 @@ Game.Launch=function()
 			17:{name:'Super',unlock:800,achievUnlock:800,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000000000000000},
 			18:{name:'Elite',unlock:900,achievUnlock:900,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000000000000000000},
 			19:{name:'Ultra',unlock:1000,achievUnlock:1000,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000000000000000000000},
-			20:{name:'God',unlock:1200,achievUnlock:1200,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000000000000000000000000},
+			20:{name:'God',unlock:1000,achievUnlock:1000,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000000000000000000000000},
 			'synergy1':{name:'Synergy I',unlock:15,iconRow:20,color:'#008595',special:1,req:'Synergies Vol. I',price:			200000},
 			'synergy2':{name:'Synergy II',unlock:75,iconRow:29,color:'#008595',special:1,req:'Synergies Vol. II',price:			200000000000},
 			'fortune':{name:'Fortune',unlock:-1,iconRow:32,color:'#9ab834',special:1,price:				77777777777777777777777777777},
