@@ -13186,8 +13186,8 @@ Game.Launch=function()
 			Game.mousePointer=0;
 			
 			//handle milk and milk accessories
-			Game.milkProgress=Game.AchievementsOwned/25;
-			if (Game.milkProgress>=0.5) Game.Unlock('Kitten helpers');
+			Game.milkProgress=Game.AchievementsOwned/20;
+			if (Game.milkProgress>=1) Game.Unlock('Kitten helpers');
 			if (Game.milkProgress>=1) Game.Unlock('Kitten workers');
 			if (Game.milkProgress>=2) Game.Unlock('Kitten engineers');
 			if (Game.milkProgress>=3) Game.Unlock('Kitten overseers');
@@ -13205,13 +13205,13 @@ Game.Launch=function()
 			if (Game.milkProgress>=13) Game.Unlock('Kitten duos');
 			if (Game.milkProgress>=13) Game.Unlock('Kitten trios');
 			if (Game.milkProgress>=13) Game.Unlock('Kitten squads');
-			if (Game.milkProgress>=13.5) Game.Unlock('Kitten elites');
+			if (Game.milkProgress>=14) Game.Unlock('Kitten elites');
 			if (Game.milkProgress>=14) Game.Unlock('Kitten lovers');
 			if (Game.milkProgress>=14) Game.Unlock('Kitten paradise');
-			if (Game.milkProgress>=14) Game.Unlock('Kitten odyssey');
-			if (Game.milkProgress>=14.5) Game.Unlock('Kitten mania');
-			if (Game.milkProgress>=14.5) Game.Unlock('Kitten world');
-			if (Game.milkProgress>=15) Game.Unlock('Kitten gods');
+			if (Game.milkProgress>=15) Game.Unlock('Kitten odyssey');
+			if (Game.milkProgress>=15) Game.Unlock('Kitten mania');
+			if (Game.milkProgress>=16) Game.Unlock('Kitten world');
+			if (Game.milkProgress>=16) Game.Unlock('Kitten gods');
 			Game.milkH=Math.min(1,Game.milkProgress)*0.35;
 			Game.milkHd+=(Game.milkH-Game.milkHd)*0.02;
 			
