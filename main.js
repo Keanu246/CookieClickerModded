@@ -4131,8 +4131,12 @@ Game.Launch=function()
 			if (Game.Has('Kitten mania')) catMult*=(1+Game.milkProgress*0.5*milkMult);
 			if (Game.Has('Kitten world')) catMult*=(1+Game.milkProgress*0.5*milkMult);
 			if (Game.Has('Kitten coders')) catMult*=(1+Game.milkProgress*0.6*milkMult);
-			if (Game.Has('Kitten powers to victory')) catMult*=(1+Game.milkProgress*0.6*milkMult);
-			if (Game.Has('Kitten gods')) catMult*=(1+Game.milkProgress*0.75*milkMult);
+			if (Game.Has('Kitten powers to victory')) catMult*=(1+Game.milkProgress*0.75*milkMult);
+			if (Game.Has('Kitten gods')) catMult*=(1+Game.milkProgress*1.0*milkMult);
+			if (Game.Has('Kitten gods II')) catMult*=(1+Game.milkProgress*1.0*milkMult);
+			if (Game.Has('Kitten gods III')) catMult*=(1+Game.milkProgress*1.0*milkMult);
+			if (Game.Has('Kitten gods IV')) catMult*=(1+Game.milkProgress*1.0*milkMult);
+			if (Game.Has('Kitten gods V')) catMult*=(1+Game.milkProgress*1.0*milkMult);
 			if (Game.Has('Kitten angels')) catMult*=(1+Game.milkProgress*0.1*milkMult);
 			if (Game.Has('Fortune #103')) catMult*=(1+Game.milkProgress*0.05*milkMult);
 			
@@ -6118,6 +6122,7 @@ Game.Launch=function()
 					if (Game.Has('Kitten mania')) list.push('News : an mania of cats will be here within it/s limit. Also, they are nice to each other.');
 					if (Game.Has('Kitten world')) list.push('News : In Kitten World, our kittens we have is over 1 million population, says local news kitten.');
 					if (Game.Has('Kitten coders')) list.push('News : kitten hackers hacked over $50,000 worth of bank funds and they got caught, says news kitten.');
+					if (Game.Has('Kitten gods')) list.push('News : gods of kittens are making power but unstable heaven cookies with godly taste!');
 					if (Game.Has('Kitten angels')) list.push('News : "Try to ignore any ghostly felines that may be purring inside your ears," warn scientists. "They\'ll just lure you into making poor life choices."');
 				}
 				
@@ -9828,6 +9833,10 @@ Game.Launch=function()
 		new Game.Upgrade('Kitten coders','You gain <b>more CpS</b> the more milk you have.<q>We are hackers and coders, sir</q>',9e103,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
 		new Game.Upgrade('Kitten powers to victory','You gain <b>more CpS</b> the more milk you have.<q>Power your stuff and your items, sir</q>',9e111,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
 		new Game.Upgrade('Kitten gods','You gain <b>more CpS</b> the more milk you have.<q>we are gods of all cats, sir</q>',9e121,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
+		new Game.Upgrade('Kitten gods II','You gain <b>more CpS</b> the more milk you have.<q>we are gods of all cats, sir</q>',9e130,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
+		new Game.Upgrade('Kitten gods III','You gain <b>more CpS</b> the more milk you have.<q>we are gods of all cats, sir</q>',9e138,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
+		new Game.Upgrade('Kitten gods IV','You gain <b>more CpS</b> the more milk you have.<q>we are gods of all cats, sir</q>',9e147,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
+		new Game.Upgrade('Kitten gods V','You gain <b>more CpS</b> the more milk you have.<q>we are gods of all cats, sir</q>',9e156,Game.GetIcon('Kitten',20));Game.last.kitten=1;Game.MakeTiered(Game.last,20,18);
 		
 		order=19100;
 		//note : price for these capped to base price OR 1 day of unbuffed CpS
@@ -13224,6 +13233,10 @@ Game.Launch=function()
 			if (Game.milkProgress>=15) Game.Unlock('Kitten coders');
 			if (Game.milkProgress>=16) Game.Unlock('Kitten powers to victory');
 			if (Game.milkProgress>=16) Game.Unlock('Kitten gods');
+			if (Game.milkProgress>=16) Game.Unlock('Kitten gods II');
+			if (Game.milkProgress>=16) Game.Unlock('Kitten gods III');
+			if (Game.milkProgress>=16) Game.Unlock('Kitten gods IV');
+			if (Game.milkProgress>=16) Game.Unlock('Kitten gods V');
 			Game.milkH=Math.min(1,Game.milkProgress)*0.35;
 			Game.milkHd+=(Game.milkH-Game.milkHd)*0.02;
 			
