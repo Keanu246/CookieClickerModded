@@ -7496,6 +7496,7 @@ Game.Launch=function()
 			if (Game.Has('Lucky grandmas')) list.push('luckyGrandma');
 			if (Game.Has('Metagrandmas')) list.push('metaGrandma');
 			if (Game.Has('Script grannies')) list.push('scriptGrandma');
+			if (Game.Has('Soldier grannies')) list.push('scriptGrandma');
 			if (Game.season=='christmas') list.push('elfGrandma');
 			if (Game.season=='easter') list.push('bunnyGrandma');
 			return choose(list)+'.png';
@@ -7709,7 +7710,7 @@ Game.Launch=function()
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		
-		new Game.Object('Headquarters','headquarter|headquarters|raided|[X] attacked enemy base|Equipped with [X] attacked enemy base','Send cookie troops from your hq to raid enemies for cookies.',18,35,{base:'headquarters',xV:8,yV:64,w:14,rows:1,x:8,y:-32,frames:2},1.645e22,function(me){
+		new Game.Object('Headquarters','headquarter|headquarters|raided|[X] attacked enemy base|Equipped with [X] attacked enemy base','Send cookie troops from your hq to raid enemies for cookies.',1,33,{base:'headquarters',xV:8,yV:64,w:14,rows:1,x:8,y:-32,frames:2},1.345e20,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			mult*=Game.magicCpS(me.name);
@@ -9767,6 +9768,11 @@ Game.Launch=function()
 		new Game.TieredUpgrade('Game.Loop','Javascript consoles are <b>twice</b> as efficient.<q>You\'re not quite sure what to make of this. What does it mean? What does it do? Who would leave something like that just laying around here? Try asking again in 1/30th of a second.</q>','Javascript console',10);
 		new Game.TieredUpgrade('eval()','Javascript consoles are <b>twice</b> as efficient.<q>It is said that this simple function holds the key to the universe, and that whosoever masters it may shape reality to their will.<br>Good thing you have no idea how it works. Makes for a neat plaque on your wall, though.</q>','Javascript console',11);
 		
+		order=1500;
+		new Game.TieredUpgrade('Improved base','Headquarters are <b>twice</b> as efficient.<q>Raiding a base with improved defense is op.</q>','Headquarters',1);
+		new Game.TieredUpgrade('Stronger defense','Headquarters are <b>twice</b> as efficient.<q>Those defense needs more power to victory!</q>','Headquarters',2);
+		new Game.TieredUpgrade('Mines all set up!','Headquarters are <b>twice</b> as efficient.<q>All mines are ready, but they will trigger and explode when our cookie masters will protect the cookie hq.</q>','Headquarters',3);
+		
 		order=5000;
 		Game.SynergyUpgrade('Script grannies','<q>Armies of energy drink-fueled grandmas ready to hack into the cyberspace for renegade e-cookies.</q>','Javascript console','Grandma','synergy1');
 		Game.SynergyUpgrade('Tombola computing','','Javascript console','Chancemaker','synergy2');
@@ -10880,20 +10886,21 @@ Game.Launch=function()
 		new Game.Achievement('God fingers IX','Have <b>2800</b> cursors.',[0,32]);
 		new Game.Achievement('God fingers X','Have <b>3000</b> cursors.',[0,33]);
 		
-		order=1100;Game.TieredAchievement('But wait \'til you get older','Have <b>550</b> grandmas.','Grandma',12);
-		order=1100;Game.TieredAchievement('Best grandmas in the world','Have <b>600</b> grandmas.','Grandma',13);
-		order=1100;Game.TieredAchievement('Grandma champions','Have <b>700</b> grandmas.','Grandma',14);
-		order=1100;Game.TieredAchievement('Grandma will help you a lot','Have <b>800</b> grandmas.','Grandma',15);
-		order=1100;Game.TieredAchievement('60 years old','Have <b>900</b> grandmas.','Grandma',16);
-		order=1100;Game.TieredAchievement('80 years old','Have <b>1000</b> grandmas.','Grandma',17);
-		order=1100;Game.TieredAchievement('100 years old','Have <b>1250</b> grandmas.','Grandma',18);
-		order=1100;Game.TieredAchievement('Grandma Mania','Have <b>1500</b> grandmas.','Grandma',19);
-		order=1100;Game.TieredAchievement('Grandma Apocalypse','Have <b>1750</b> grandmas.','Grandma',20);
-		order=1100;Game.TieredAchievement('Super grandmas','Have <b>2000</b> grandmas.','Grandma',20);
-		order=1100;Game.TieredAchievement('Super grandmas II','Have <b>2250</b> grandmas.','Grandma',20);
-		order=1100;Game.TieredAchievement('Super grandmas III','Have <b>2500</b> grandmas.','Grandma',20);
-		order=1100;Game.TieredAchievement('Super grandmas IV','Have <b>2750</b> grandmas.','Grandma',20);
-		order=1100;Game.TieredAchievement('Super grandmas V','Have <b>3000</b> grandmas.','Grandma',20);
+		order=1100;
+		Game.TieredAchievement('But wait \'til you get older','Have <b>550</b> grandmas.','Grandma',12);
+		Game.TieredAchievement('Best grandmas in the world','Have <b>600</b> grandmas.','Grandma',13);
+		Game.TieredAchievement('Grandma champions','Have <b>700</b> grandmas.','Grandma',14);
+		Game.TieredAchievement('Grandma will help you a lot','Have <b>800</b> grandmas.','Grandma',15);
+		Game.TieredAchievement('60 years old','Have <b>900</b> grandmas.','Grandma',16);
+		Game.TieredAchievement('80 years old','Have <b>1000</b> grandmas.','Grandma',17);
+	        Game.TieredAchievement('100 years old','Have <b>1250</b> grandmas.','Grandma',18);
+		Game.TieredAchievement('Grandma Mania','Have <b>1500</b> grandmas.','Grandma',19);
+		Game.TieredAchievement('Grandma Apocalypse','Have <b>1750</b> grandmas.','Grandma',20);
+		Game.TieredAchievement('Super grandmas','Have <b>2000</b> grandmas.','Grandma',20);
+		Game.TieredAchievement('Super grandmas II','Have <b>2250</b> grandmas.','Grandma',20);
+		Game.TieredAchievement('Super grandmas III','Have <b>2500</b> grandmas.','Grandma',20);
+		Game.TieredAchievement('Super grandmas IV','Have <b>2750</b> grandmas.','Grandma',20);
+		Game.TieredAchievement('Super grandmas V','Have <b>3000</b> grandmas.','Grandma',20);
 		order=1200;Game.TieredAchievement('Sharpest tool in the shed','Have <b>500</b> farms.','Farm',11);
 		order=1300;Game.TieredAchievement('Hey now, you\'re a rock','Have <b>500</b> mines.','Mine',11);
 		order=1400;Game.TieredAchievement('Break the mold','Have <b>500</b> factories.','Factory',11);
@@ -10953,6 +10960,11 @@ Game.Launch=function()
 		Game.TieredAchievement('Closure','Have <b>400</b> javascript consoles.','Javascript console',9);
 		Game.TieredAchievement('Dude what if we\'re all living in a simulation like what if we\'re all just code on a computer somewhere','Have <b>450</b> javascript consoles.','Javascript console',10);
 		Game.TieredAchievement('Taking the back streets','Have <b>500</b> javascript consoles.','Javascript console',11);
+		
+		order=2400;
+		Game.TieredAchievement('Attack!','Have <b>1</b> headquarter.','Headquarters',1);
+		Game.TieredAchievement('Soldiers ready!','Have <b>50</b> headquarter.','Headquarters',2);
+		Game.TieredAchievement('Cookie bazookas','Have <b>100</b> headquarter.','Headquarters',3);
 		
 		order=2320;
 		Game.ProductionAchievement('Inherited prototype','Javascript console',1);
