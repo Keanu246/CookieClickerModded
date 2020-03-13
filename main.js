@@ -7708,7 +7708,17 @@ Game.Launch=function()
 			Game.UnlockTiered(this);
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
 		});
-		Game.last.displayName='<span style="font-size:65%;position:relative;bottom:4px;">Javascript console</span>';//shrink the name since it's so large
+		
+		new Game.Object('Headquarters','headquarter|headquarters|raided|[X] attacked enemy base|Equipped with [X] attacked enemy base','Send cookie troops from your hq to raid enemies for cookies.',18,35,{base:'headquarters',xV:8,yV:64,w:14,rows:1,x:8,y:-32,frames:2},1.645e22,function(me){
+			var mult=1;
+			mult*=Game.GetTieredCpsMult(me);
+			mult*=Game.magicCpS(me.name);
+			return me.baseCps*mult;
+		},function(){
+			Game.UnlockTiered(this);
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
+		});
+		Game.last.displayName='<span style="font-size:65%;position:relative;bottom:4px;">Headquarters</span>';//shrink the name since it's so large
 		
 		
 		Game.foolObjects={
@@ -7730,6 +7740,7 @@ Game.Launch=function()
 			'Chancemaker':{name:'Privatized planet',desc:'Actually, you know what\'s cool? A whole planet dedicated to producing, advertising, selling, and consuming your cookies.',icon:15},
 			'Fractal engine':{name:'Senate seat',desc:'Only through political dominion can you truly alter this world to create a brighter, more cookie-friendly future.',icon:16},
 			'Javascript console':{name:'Doctrine',desc:'Taking many forms -religion, culture, philosophy- a doctrine may, when handled properly, cause a lasting impact on civilizations, reshaping minds and people and ensuring all future generations share a singular goal - the production, and acquisition, of more cookies.',icon:17},
+			'Headquarters':{name:'Warfare',desc:'Raiding for cookies is the matter for life, and plus we will win the cookie chocolate chip fight!',icon:18},
 		};
 		
 		
