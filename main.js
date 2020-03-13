@@ -7496,7 +7496,6 @@ Game.Launch=function()
 			if (Game.Has('Lucky grandmas')) list.push('luckyGrandma');
 			if (Game.Has('Metagrandmas')) list.push('metaGrandma');
 			if (Game.Has('Script grannies')) list.push('scriptGrandma');
-			if (Game.Has('Soldier grannies')) list.push('scriptGrandma');
 			if (Game.season=='christmas') list.push('elfGrandma');
 			if (Game.season=='easter') list.push('bunnyGrandma');
 			return choose(list)+'.png';
