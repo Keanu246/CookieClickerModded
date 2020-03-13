@@ -4,6 +4,7 @@ DungeonGen.js
 dungeons.js
 excanvas.compiled.js
 main.js
+minigameCasino.js
 minigameGarden.js
 minigameGrimoire.js
 minigameImitationGame.js
